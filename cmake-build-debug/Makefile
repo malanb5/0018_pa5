@@ -123,32 +123,72 @@ pa5a/fast:
 	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/build
 .PHONY : pa5a/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named listFuncs.o
 
-.PHONY : main.o
+# Build rule for target.
+listFuncs.o: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 listFuncs.o
+.PHONY : listFuncs.o
+
+# fast build rule for target.
+listFuncs.o/fast:
+	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/build
+.PHONY : listFuncs.o/fast
+
+listFuncs.o: listFuncs.cpp.o
+
+.PHONY : listFuncs.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/main.cpp.o
-.PHONY : main.cpp.o
+listFuncs.cpp.o:
+	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/listFuncs.cpp.o
+.PHONY : listFuncs.cpp.o
 
-main.i: main.cpp.i
+listFuncs.i: listFuncs.cpp.i
 
-.PHONY : main.i
+.PHONY : listFuncs.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/main.cpp.i
-.PHONY : main.cpp.i
+listFuncs.cpp.i:
+	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/listFuncs.cpp.i
+.PHONY : listFuncs.cpp.i
 
-main.s: main.cpp.s
+listFuncs.s: listFuncs.cpp.s
 
-.PHONY : main.s
+.PHONY : listFuncs.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/main.cpp.s
-.PHONY : main.cpp.s
+listFuncs.cpp.s:
+	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/listFuncs.cpp.s
+.PHONY : listFuncs.cpp.s
+
+pa5list.o: pa5list.cpp.o
+
+.PHONY : pa5list.o
+
+# target to build an object file
+pa5list.cpp.o:
+	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/pa5list.cpp.o
+.PHONY : pa5list.cpp.o
+
+pa5list.i: pa5list.cpp.i
+
+.PHONY : pa5list.i
+
+# target to preprocess a source file
+pa5list.cpp.i:
+	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/pa5list.cpp.i
+.PHONY : pa5list.cpp.i
+
+pa5list.s: pa5list.cpp.s
+
+.PHONY : pa5list.s
+
+# target to generate assembly for a file
+pa5list.cpp.s:
+	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/pa5list.cpp.s
+.PHONY : pa5list.cpp.s
 
 # Help Target
 help:
@@ -159,9 +199,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... pa5a"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... listFuncs.o"
+	@echo "... listFuncs.o"
+	@echo "... listFuncs.i"
+	@echo "... listFuncs.s"
+	@echo "... pa5list.o"
+	@echo "... pa5list.i"
+	@echo "... pa5list.s"
 .PHONY : help
 
 

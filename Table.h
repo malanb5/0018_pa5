@@ -20,7 +20,7 @@
 // NOTE: You will need the following #include to compile the hash function used
 //  below on aludra.  See the call to tr1::hash later in this file for more 
 //  information.
-#include <tr1/functional>
+//#include <tr1/functional>
 
 
 
@@ -99,15 +99,21 @@ private:
     //     return std::hash<string>()(word) % hashSize;
     // WARNING: However, the alternate statement given above will NOT compile on
     //     aludra.  You will need the following version on aludra.
-
-    return tr1::hash<string>()(word) % hashSize;
+    return std::hash<string>()(word) % hashSize;
+//    return tr1::hash<string>()(word) % hashSize;
   }
 
 // add private data and methods here
 
-  unsigned int hashSize;      // size of the hash table
-                              // (used in hashCode method above)
+  unsigned int hashSize;    // size of the hash table
+             // (used in hashCode method above)
+  ListType * data;
 
+  int numberOfEntries;
+
+  int countNonEmptyBuckets() const;
+
+  int findLongestChain() const;
 
 };
 

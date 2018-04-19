@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pa5a.dir/main.cpp.o"
+  "CMakeFiles/pa5a.dir/pa5list.cpp.o"
   "pa5a.pdb"
   "pa5a"
 )

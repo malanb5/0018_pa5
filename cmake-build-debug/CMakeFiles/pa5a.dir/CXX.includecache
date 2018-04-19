@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/malanb5/cs455/pa5/main.cpp
+/Users/malanb5/cs455/pa5/listFuncs.h
+
+/Users/malanb5/cs455/pa5/pa5list.cpp
 iostream
 -
+string
+-
+cassert
+-
+listFuncs.h
+/Users/malanb5/cs455/pa5/listFuncs.h
 

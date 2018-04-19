@@ -57,38 +57,40 @@ include CMakeFiles/pa5a.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pa5a.dir/flags.make
 
-CMakeFiles/pa5a.dir/main.cpp.o: CMakeFiles/pa5a.dir/flags.make
-CMakeFiles/pa5a.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pa5a.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pa5a.dir/main.cpp.o -c /Users/malanb5/cs455/pa5/main.cpp
+CMakeFiles/pa5a.dir/pa5list.cpp.o: CMakeFiles/pa5a.dir/flags.make
+CMakeFiles/pa5a.dir/pa5list.cpp.o: ../pa5list.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pa5a.dir/pa5list.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pa5a.dir/pa5list.cpp.o -c /Users/malanb5/cs455/pa5/pa5list.cpp
 
-CMakeFiles/pa5a.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pa5a.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/malanb5/cs455/pa5/main.cpp > CMakeFiles/pa5a.dir/main.cpp.i
+CMakeFiles/pa5a.dir/pa5list.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pa5a.dir/pa5list.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/malanb5/cs455/pa5/pa5list.cpp > CMakeFiles/pa5a.dir/pa5list.cpp.i
 
-CMakeFiles/pa5a.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pa5a.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/malanb5/cs455/pa5/main.cpp -o CMakeFiles/pa5a.dir/main.cpp.s
+CMakeFiles/pa5a.dir/pa5list.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pa5a.dir/pa5list.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/malanb5/cs455/pa5/pa5list.cpp -o CMakeFiles/pa5a.dir/pa5list.cpp.s
 
-CMakeFiles/pa5a.dir/main.cpp.o.requires:
+CMakeFiles/pa5a.dir/pa5list.cpp.o.requires:
 
-.PHONY : CMakeFiles/pa5a.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/pa5a.dir/pa5list.cpp.o.requires
 
-CMakeFiles/pa5a.dir/main.cpp.o.provides: CMakeFiles/pa5a.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/pa5a.dir/main.cpp.o.provides
+CMakeFiles/pa5a.dir/pa5list.cpp.o.provides: CMakeFiles/pa5a.dir/pa5list.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/pa5list.cpp.o.provides.build
+.PHONY : CMakeFiles/pa5a.dir/pa5list.cpp.o.provides
 
-CMakeFiles/pa5a.dir/main.cpp.o.provides.build: CMakeFiles/pa5a.dir/main.cpp.o
+CMakeFiles/pa5a.dir/pa5list.cpp.o.provides.build: CMakeFiles/pa5a.dir/pa5list.cpp.o
 
 
 # Object files for target pa5a
 pa5a_OBJECTS = \
-"CMakeFiles/pa5a.dir/main.cpp.o"
+"CMakeFiles/pa5a.dir/pa5list.cpp.o"
 
 # External object files for target pa5a
-pa5a_EXTERNAL_OBJECTS =
+pa5a_EXTERNAL_OBJECTS = \
+"/Users/malanb5/cs455/pa5/listFuncs.o"
 
-pa5a: CMakeFiles/pa5a.dir/main.cpp.o
+pa5a: CMakeFiles/pa5a.dir/pa5list.cpp.o
+pa5a: ../listFuncs.o
 pa5a: CMakeFiles/pa5a.dir/build.make
 pa5a: CMakeFiles/pa5a.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pa5a"
@@ -99,7 +101,7 @@ CMakeFiles/pa5a.dir/build: pa5a
 
 .PHONY : CMakeFiles/pa5a.dir/build
 
-CMakeFiles/pa5a.dir/requires: CMakeFiles/pa5a.dir/main.cpp.o.requires
+CMakeFiles/pa5a.dir/requires: CMakeFiles/pa5a.dir/pa5list.cpp.o.requires
 
 .PHONY : CMakeFiles/pa5a.dir/requires
 

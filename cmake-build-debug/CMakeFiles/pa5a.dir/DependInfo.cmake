@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/malanb5/cs455/pa5/main.cpp" "/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles/pa5a.dir/main.cpp.o"
+  "/Users/malanb5/cs455/pa5/pa5list.cpp" "/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles/pa5a.dir/pa5list.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
