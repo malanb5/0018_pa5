@@ -25,6 +25,8 @@ void executeOptions(Table * &);
 
 void displayHelp();
 
+void displaySize(int &);
+
 bool processCommand(Table * &, string &, string &, int &);
 
 int main(int argc, char * argv[]) {
@@ -58,20 +60,6 @@ int main(int argc, char * argv[]) {
   // Reminder: use -> when calling Table methods, since grades is type Table*
 
   return 0;
-}
-
-void startUp(Table * & grades){
-    grades->hashStats(cout);
-
-    grades->insert("Matt", 100);
-    grades->insert("Deborah", 300);
-    grades->insert("Ceasar", 3400);
-    grades->insert("God", 500);
-    grades->insert("Matt", 103);
-
-    grades->printAll();
-
-    grades->hashStats(cout);
 }
 
 /**
@@ -113,12 +101,21 @@ void executeOptions(Table * & grades){
         else{
             command = line;
         }
-
         running = processCommand(grades, command, name, score);
     }
 
 }
 
+/**
+ * processes the user inputted command
+ * PRE: name has no spaces
+ * PRE: a well-formed Hash-Table grades
+ * @param grades a Hash Table which will be used to store names and scores
+ * @param command the user inputted command
+ * @param name the key of the table
+ * @param score the value associated with the name
+ * @return whether or not to continue processing commands, will only be false on the command quit
+ */
 bool processCommand(Table * & grades, string & command, string & name, int & score){
     bool keepRunning = true;
 
@@ -129,7 +126,14 @@ bool processCommand(Table * & grades, string & command, string & name, int & sco
         grades -> insert(name, score);
     }
     else if(command == "lookup") {
+        int * result = grades ->lookup(name);
 
+        if(result == NULL){
+            cout << "The result is not present"<<endl;
+        }
+        else{
+            cout<< name << " : " << * result <<endl;
+        }
     }
     else if (command == "remove") {
 
@@ -139,8 +143,10 @@ bool processCommand(Table * & grades, string & command, string & name, int & sco
     }
 
     else if( command == "size") {
-        grades -> numEntries();
+        int size = grades -> numEntries();
+        displaySize(size);
     }
+
     else if (command == "stats") {
         grades -> hashStats(cout);
     }
@@ -159,6 +165,26 @@ bool processCommand(Table * & grades, string & command, string & name, int & sco
 
 }
 
+/**
+ * prints out the size of the table
+ * PRE: size is non-negative
+ * @param size the size of the table
+ */
+void displaySize(int & size){
+    if(size == 0){
+        cout << "The table is empty."<<endl;
+    }
+    else if (size ==1){
+        cout << "There is "<< size << " entry in the table."<<endl;
+    }
+    else{
+        cout << "There are " << size << " in the table." <<endl;
+    }
+}
+
+/**
+ * displays the help command summary
+ */
 void displayHelp(){
     cout << "COMMAND SUMMARY:\n";
     cout << "insert <name> <score>      Insert this name and score in the grade table. ";

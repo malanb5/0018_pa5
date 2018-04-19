@@ -60,39 +60,76 @@ CMAKE_SOURCE_DIR = /Users/malanb5/cs455/pa5
 CMAKE_BINARY_DIR = /Users/malanb5/cs455/pa5/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/pa5a.dir
+# Target rules for target CMakeFiles/grades.o.dir
 
 # All Build rule for target.
-CMakeFiles/pa5a.dir/all:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/depend
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target pa5a"
-.PHONY : CMakeFiles/pa5a.dir/all
+CMakeFiles/grades.o.dir/all:
+	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/depend
+	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target grades.o"
+.PHONY : CMakeFiles/grades.o.dir/all
 
 # Include target in all.
-all: CMakeFiles/pa5a.dir/all
+all: CMakeFiles/grades.o.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/pa5a.dir/rule: cmake_check_build_system
+CMakeFiles/grades.o.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pa5a.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/grades.o.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/pa5a.dir/rule
+.PHONY : CMakeFiles/grades.o.dir/rule
 
 # Convenience name for target.
-pa5a: CMakeFiles/pa5a.dir/rule
+grades.o: CMakeFiles/grades.o.dir/rule
 
-.PHONY : pa5a
-
-# clean rule for target.
-CMakeFiles/pa5a.dir/clean:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/clean
-.PHONY : CMakeFiles/pa5a.dir/clean
+.PHONY : grades.o
 
 # clean rule for target.
-clean: CMakeFiles/pa5a.dir/clean
+CMakeFiles/grades.o.dir/clean:
+	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/clean
+.PHONY : CMakeFiles/grades.o.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/grades.o.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Table.o.dir
+
+# All Build rule for target.
+CMakeFiles/Table.o.dir/all:
+	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/depend
+	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Table.o"
+.PHONY : CMakeFiles/Table.o.dir/all
+
+# Include target in all.
+all: CMakeFiles/Table.o.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Table.o.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Table.o.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Table.o.dir/rule
+
+# Convenience name for target.
+Table.o: CMakeFiles/Table.o.dir/rule
+
+.PHONY : Table.o
+
+# clean rule for target.
+CMakeFiles/Table.o.dir/clean:
+	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/clean
+.PHONY : CMakeFiles/Table.o.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Table.o.dir/clean
 
 .PHONY : clean
 
@@ -103,7 +140,7 @@ clean: CMakeFiles/pa5a.dir/clean
 CMakeFiles/listFuncs.o.dir/all:
 	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/depend
 	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target listFuncs.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target listFuncs.o"
 .PHONY : CMakeFiles/listFuncs.o.dir/all
 
 # Include target in all.

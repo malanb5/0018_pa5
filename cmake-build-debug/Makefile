@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pa5a
+# Target rules for targets named grades.o
 
 # Build rule for target.
-pa5a: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pa5a
-.PHONY : pa5a
+grades.o: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 grades.o
+.PHONY : grades.o
 
 # fast build rule for target.
-pa5a/fast:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/build
-.PHONY : pa5a/fast
+grades.o/fast:
+	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/build
+.PHONY : grades.o/fast
+
+#=============================================================================
+# Target rules for targets named Table.o
+
+# Build rule for target.
+Table.o: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Table.o
+.PHONY : Table.o
+
+# fast build rule for target.
+Table.o/fast:
+	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/build
+.PHONY : Table.o/fast
 
 #=============================================================================
 # Target rules for targets named listFuncs.o
@@ -135,6 +148,60 @@ listFuncs.o: cmake_check_build_system
 listFuncs.o/fast:
 	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/build
 .PHONY : listFuncs.o/fast
+
+Table.o: Table.cpp.o
+
+.PHONY : Table.o
+
+# target to build an object file
+Table.cpp.o:
+	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/Table.cpp.o
+.PHONY : Table.cpp.o
+
+Table.i: Table.cpp.i
+
+.PHONY : Table.i
+
+# target to preprocess a source file
+Table.cpp.i:
+	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/Table.cpp.i
+.PHONY : Table.cpp.i
+
+Table.s: Table.cpp.s
+
+.PHONY : Table.s
+
+# target to generate assembly for a file
+Table.cpp.s:
+	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/Table.cpp.s
+.PHONY : Table.cpp.s
+
+grades.o: grades.cpp.o
+
+.PHONY : grades.o
+
+# target to build an object file
+grades.cpp.o:
+	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/grades.cpp.o
+.PHONY : grades.cpp.o
+
+grades.i: grades.cpp.i
+
+.PHONY : grades.i
+
+# target to preprocess a source file
+grades.cpp.i:
+	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/grades.cpp.i
+.PHONY : grades.cpp.i
+
+grades.s: grades.cpp.s
+
+.PHONY : grades.s
+
+# target to generate assembly for a file
+grades.cpp.s:
+	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/grades.cpp.s
+.PHONY : grades.cpp.s
 
 listFuncs.o: listFuncs.cpp.o
 
@@ -163,33 +230,6 @@ listFuncs.cpp.s:
 	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/listFuncs.cpp.s
 .PHONY : listFuncs.cpp.s
 
-pa5list.o: pa5list.cpp.o
-
-.PHONY : pa5list.o
-
-# target to build an object file
-pa5list.cpp.o:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/pa5list.cpp.o
-.PHONY : pa5list.cpp.o
-
-pa5list.i: pa5list.cpp.i
-
-.PHONY : pa5list.i
-
-# target to preprocess a source file
-pa5list.cpp.i:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/pa5list.cpp.i
-.PHONY : pa5list.cpp.i
-
-pa5list.s: pa5list.cpp.s
-
-.PHONY : pa5list.s
-
-# target to generate assembly for a file
-pa5list.cpp.s:
-	$(MAKE) -f CMakeFiles/pa5a.dir/build.make CMakeFiles/pa5a.dir/pa5list.cpp.s
-.PHONY : pa5list.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,14 +238,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... pa5a"
+	@echo "... grades.o"
+	@echo "... Table.o"
 	@echo "... listFuncs.o"
+	@echo "... Table.o"
+	@echo "... Table.i"
+	@echo "... Table.s"
+	@echo "... grades.o"
+	@echo "... grades.i"
+	@echo "... grades.s"
 	@echo "... listFuncs.o"
 	@echo "... listFuncs.i"
 	@echo "... listFuncs.s"
-	@echo "... pa5list.o"
-	@echo "... pa5list.i"
-	@echo "... pa5list.s"
 .PHONY : help
 
 

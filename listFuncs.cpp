@@ -33,16 +33,17 @@ Node::Node(const string &theKey, int theValue, Node *n) {
  * @param target the key to be searched for
  * @return whether or not the key is in the linked list
  */
-bool listContains(ListType & list, string target){
+int * listContains(ListType & list, string target){
     ListType copyOfPointer = list;
 
     while(copyOfPointer != NULL){
         if(copyOfPointer -> key == target){
-            return true;
+            return & copyOfPointer -> value;
         }
         copyOfPointer = copyOfPointer -> next;
     }
-    return false;
+
+    return NULL;
 }
 
 

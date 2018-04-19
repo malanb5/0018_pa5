@@ -37,7 +37,7 @@ typedef Node * ListType;
 //that operate on a list here (i.e., each includes a parameter of type
 //ListType or ListType&).  No function definitions go in this file.
 
-bool listContains(ListType & list, string target);
+int * listContains(ListType & list, string target);
 
 bool listRemove(ListType & list, string target);
 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/malanb5/cs455/pa5/Table.h
+iostream
+-
+string
+-
+
+/Users/malanb5/cs455/pa5/grades.cpp
+Table.h
+/Users/malanb5/cs455/pa5/Table.h
+cstdlib
+-
+
