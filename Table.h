@@ -22,7 +22,12 @@
 //  information.
 //#include <tr1/functional>
 
-
+/**
+ * REPRESENTATIONAL INVARIANTS:
+ * 1) 0 <= hashAddress < hashSize
+ * 2) numEntries is non-negative
+ * 3) 0 < hashSize <= unsigned int MAX
+ */
 
 using namespace std;
 
@@ -129,7 +134,7 @@ private:
    * @param key to be hashed
    * @return the hash address of the key
    */
-  int getHashAddress(const string &) const;
+  int getHashAddress(const string & key) const;
 
 };
 

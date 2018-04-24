@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="concord">
-				<Option output="/Users/malanb5/cs455/pa5/cmake-build-debug/concord" prefix_auto="0" extension_auto="0"/>
+			<Target title="grades">
+				<Option output="/Users/malanb5/cs455/pa5/cmake-build-debug/grades" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/malanb5/cs455/pa5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +52,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 concord"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 grades"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="concord/fast">
-				<Option output="/Users/malanb5/cs455/pa5/cmake-build-debug/concord" prefix_auto="0" extension_auto="0"/>
+			<Target title="grades/fast">
+				<Option output="/Users/malanb5/cs455/pa5/cmake-build-debug/grades" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/malanb5/cs455/pa5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,7 +73,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 concord/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 grades/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/malanb5/cs455/pa5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,19 +81,19 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/malanb5/cs455/pa5/Table.cpp">
-			<Option target="concord"/>
+			<Option target="grades"/>
 		</Unit>
 		<Unit filename="/Users/malanb5/cs455/pa5/Table.h">
-			<Option target="concord"/>
+			<Option target="grades"/>
 		</Unit>
-		<Unit filename="/Users/malanb5/cs455/pa5/concord.cpp">
-			<Option target="concord"/>
+		<Unit filename="/Users/malanb5/cs455/pa5/grades.cpp">
+			<Option target="grades"/>
 		</Unit>
 		<Unit filename="/Users/malanb5/cs455/pa5/listFuncs.cpp">
-			<Option target="concord"/>
+			<Option target="grades"/>
 		</Unit>
 		<Unit filename="/Users/malanb5/cs455/pa5/listFuncs.h">
-			<Option target="concord"/>
+			<Option target="grades"/>
 		</Unit>
 		<Unit filename="/Users/malanb5/cs455/pa5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

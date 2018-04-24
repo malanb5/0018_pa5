@@ -196,7 +196,7 @@ void testContains(){
 
 /**
  * helper function to print the individual test of add
- * @param list the list ot be tested
+ * @param list the list to be tested
  * @param result the expected result
  */
 void testInd(ListType & list, string & result, string & size){

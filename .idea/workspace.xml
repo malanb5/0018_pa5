@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="pa5a" targetName="concord" />
+      <config projectName="pa5a" targetName="grades" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,32 +14,18 @@
     <list default="true" id="30956d3a-7147-48c7-922f-18c8b9d93ec8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Table.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Table.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Table.h" beforeDir="false" afterPath="$PROJECT_DIR$/Table.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/grades.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/grades.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.o.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/Table.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/Table.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/grades.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/grades.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/listFuncs.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/grades.dir/listFuncs.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/grades" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/grades" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/pa5a.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pa5a.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concord.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/concord.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grades.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/grades.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listFuncs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/listFuncs.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listFuncs.h" beforeDir="false" afterPath="$PROJECT_DIR$/listFuncs.h" afterDir="false" />
@@ -55,58 +41,34 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5391879">
+    <splitter split-orientation="horizontal" split-proportion="0.55618507">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="pa5list.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pa5list.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3015">
-                  <caret line="201" column="27" selection-start-line="201" selection-start-column="27" selection-end-line="201" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#478#497#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="39" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="grades.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grades.cpp">
+          <file leaf-file-name="README" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+                <state relative-caret-position="600">
+                  <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Table.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Table.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Table.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1950">
-                  <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
                   <folding>
                     <element signature="e#282#301#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Table.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Table.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1635">
-                  <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#117#135#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -128,8 +90,8 @@
           <file leaf-file-name="listFuncs.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/listFuncs.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1005">
-                  <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+                <state relative-caret-position="1200">
+                  <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
                   <folding>
                     <element signature="e#75#94#0" expanded="true" />
                   </folding>
@@ -137,11 +99,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="listFuncs.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/listFuncs.h">
+          <file leaf-file-name="Table.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Table.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="233">
-                  <caret line="47" column="3" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+                <state relative-caret-position="1875">
+                  <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+                  <folding>
+                    <element signature="e#117#135#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -164,17 +129,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/concord.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/grades.cpp" />
         <option value="$PROJECT_DIR$/pa5list.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/listFuncs.h" />
-        <option value="$PROJECT_DIR$/Table.h" />
-        <option value="$PROJECT_DIR$/Table.cpp" />
         <option value="$PROJECT_DIR$/listFuncs.cpp" />
-        <option value="$PROJECT_DIR$/concord.cpp" />
+        <option value="$PROJECT_DIR$/listFuncs.h" />
+        <option value="$PROJECT_DIR$/Table.cpp" />
+        <option value="$PROJECT_DIR$/Table.h" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -187,9 +152,12 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1440" />
+    <option name="y" value="-997" />
+    <option name="width" value="1080" />
+    <option name="height" value="1897" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -217,14 +185,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.concord">
+  <component name="RunManager" selected="Application.grades">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="pa5a" RUN_TARGET_NAME="pa5list" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="concord" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="pa5a" TARGET_NAME="concord" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="pa5a" RUN_TARGET_NAME="concord" />
     <configuration name="concord.o" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&lt;melville.txt &gt;out.txt" PASS_PARENT_ENVS_2="true" PROJECT_NAME="pa5a" TARGET_NAME="concord.o" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="pa5a" RUN_TARGET_NAME="pa5list" />
+    <configuration name="grades" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="1" PASS_PARENT_ENVS_2="true" PROJECT_NAME="pa5a" TARGET_NAME="grades" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="pa5a" RUN_TARGET_NAME="grades" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.concord.o" />
-      <item itemvalue="Application.concord" />
+      <item itemvalue="Application.grades" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -247,11 +215,14 @@
       <workItem from="1524372496430" duration="603000" />
       <workItem from="1524421267533" duration="1365000" />
       <workItem from="1524536097533" duration="551000" />
+      <workItem from="1524553114391" duration="497000" />
+      <workItem from="1524595058080" duration="477000" />
+      <workItem from="1524597719886" duration="8461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112421000" />
+    <option name="totallyTimeSpent" value="121856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -263,28 +234,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="1440" y="-997" width="1080" height="1897" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.28541225" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295393" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32666665" />
       <window_info anchor="bottom" id="CMake" order="8" weight="0.32913518" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.12845528" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12833333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.09212121" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3387534" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.11444444" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3387534" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="220" height="1720" id="Documentation" order="3" side_tool="true" weight="0.32851636" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32682925" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,27 +565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pa5list.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3015">
-          <caret line="201" column="27" selection-start-line="201" selection-start-column="27" selection-end-line="201" selection-end-column="27" />
-          <folding>
-            <element signature="e#478#497#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,26 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Table.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
-          <folding>
-            <element signature="e#282#301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Table.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
-          <folding>
-            <element signature="e#117#135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/poeout.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4275">
@@ -673,34 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listFuncs.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-          <folding>
-            <element signature="e#75#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listFuncs.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="47" column="3" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/concord.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
           <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grades.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -711,10 +621,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grades.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3090">
+          <caret line="206" column="34" selection-start-line="206" selection-start-column="34" selection-end-line="206" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pa5list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="e#478#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listFuncs.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="37" lean-forward="true" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listFuncs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+          <folding>
+            <element signature="e#75#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Table.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#117#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Table.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="e#282#301#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

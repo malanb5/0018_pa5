@@ -39,9 +39,7 @@ Table::Table(unsigned int hSize) {
 int * Table::lookup(const string &key) {
     int hashAddress = getHashAddress(key);
 
-    ListType location = data[hashAddress];
-
-    return listContains(location, key);
+    return listContains(data[hashAddress], key);
 }
 
 bool Table::remove(const string &key) {
@@ -116,7 +114,7 @@ void Table::hashStats(ostream &out) const {
       out << "number of buckets: " << hashSize <<"\n";
       out << "number of entries: " << numEntries() <<"\n";
       out << "number of non-empty buckets: " << countNonEmptyBuckets()<<"\n";
-      out << "longest chain: " << findLongestChain()<<endl;
+      out << "longest chain: " << findLongestChain() << endl;
 
 }
 

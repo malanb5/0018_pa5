@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/malanb5/cs455/pa5
 CMAKE_BINARY_DIR = /Users/malanb5/cs455/pa5/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/concord.dir
+# Target rules for target CMakeFiles/grades.dir
 
 # All Build rule for target.
-CMakeFiles/concord.dir/all:
-	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/depend
-	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target concord"
-.PHONY : CMakeFiles/concord.dir/all
+CMakeFiles/grades.dir/all:
+	$(MAKE) -f CMakeFiles/grades.dir/build.make CMakeFiles/grades.dir/depend
+	$(MAKE) -f CMakeFiles/grades.dir/build.make CMakeFiles/grades.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target grades"
+.PHONY : CMakeFiles/grades.dir/all
 
 # Include target in all.
-all: CMakeFiles/concord.dir/all
+all: CMakeFiles/grades.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/concord.dir/rule: cmake_check_build_system
+CMakeFiles/grades.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/concord.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/grades.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/concord.dir/rule
+.PHONY : CMakeFiles/grades.dir/rule
 
 # Convenience name for target.
-concord: CMakeFiles/concord.dir/rule
+grades: CMakeFiles/grades.dir/rule
 
-.PHONY : concord
-
-# clean rule for target.
-CMakeFiles/concord.dir/clean:
-	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/clean
-.PHONY : CMakeFiles/concord.dir/clean
+.PHONY : grades
 
 # clean rule for target.
-clean: CMakeFiles/concord.dir/clean
+CMakeFiles/grades.dir/clean:
+	$(MAKE) -f CMakeFiles/grades.dir/build.make CMakeFiles/grades.dir/clean
+.PHONY : CMakeFiles/grades.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/grades.dir/clean
 
 .PHONY : clean
 

@@ -39,41 +39,41 @@ typedef Node * ListType;
 
 /**
  * determine if the target key is within the linked list or not
- * @param list the linked list to be searched
+ * @param list a pointer to the linked list to be searched
  * @param target the key to be searched for
- * @return whether or not the key is in the linked list
+ * @return a pointer to the value assocaited with the target or key, NULL is the not present in the list
  */
-int * listContains(ListType & list, string target);
+int * listContains(const ListType & list, const string target);
 
 /**
  * deletes the target key and return true, if not there returns false
  * and the list remains unchanged
- * @param list a valid linkedList
+ * @param list a pointer to a valid linkedList
  * @param target key to be located in the list
  * @return true and the entry removed, false the list remains unchanged
  */
-bool listRemove(ListType & list, string target);
+bool listRemove(ListType & list, const string target);
 
 /**
  * adds a node to the front of the linked list
- * @param list the linked list in question
- * @param keyToAdd the key to be added
- * @param valueToAdd the value to be added
+ * @param list a pointer to the linked list to be added to
+ * @param target the key to be added
+ * @param aValue the value to be added
  */
-bool listAdd(ListType & list, string target, int aValue);
+bool listAdd(ListType & list, const string target, const int aValue);
 
 /**
  * calculates the size of the linked list
- * @param list the linked list in question
+ * @param list a pointer to the linked list in question
  * @return the size of the linkedList
  */
-int listSize(ListType & list);
+int listSize(const ListType & list);
 
 /**
- * prints the linked list
+ * prints the linked list, will print nothing if empty
  * @param list the linked list to be printed
  */
-void listPrint(ListType & list);
+void listPrint(const ListType & list);
 
 // keep the following line at the end of the file
 #endif

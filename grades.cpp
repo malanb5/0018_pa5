@@ -62,24 +62,24 @@ int main(int argc, char * argv[]) {
 
   executeOptions(grades);
 
-  // add more code here
-  // Reminder: use -> when calling Table methods, since grades is type Table*
-
   return 0;
 }
 
 /**
  * Gets user input and process the command
- * PRE: user entry is in the form <command> <name> <score>
- * or <name> <score>
- * PRE: name must no have any spaces in it
- * @param grades
+ * PRE: user entry is in the form <command> or <command> <name> <score> or <command> <name>
+ * PRE: name has no spaces in it
+ * PRE: a well-formed Hash Table grades
+ * PRE: there are no extra spaces after just a <command> input or in between the parameter inputs
+ * @param grades HashTable instance
  */
 void executeOptions(Table * & grades){
-    string line = "";
-    string delimiter = " ";
-    size_t found = 0;
-    size_t nameEnd = 0;
+    string input = "";
+    const string DELIMITER = " ";
+    const int START = 0;
+    const int OFFSET = 1;
+    size_t foundLocation = 0;
+    size_t nameEndLocation = 0;
     string command = "";
     string name = "";
     int score = 0;
@@ -88,24 +88,27 @@ void executeOptions(Table * & grades){
 
     while(running){
         cout << "cmd> ";
-        getline(cin, line);
-        found = line.find(delimiter);
+        getline(cin, input);
 
-        if(found != string::npos){
-            command = line.substr(0, found);
-            string rest = line.substr(found + 1, line.length());
-            nameEnd= rest.find(delimiter);
+        foundLocation = input.find(DELIMITER);
+
+        // if there are spaces in the input
+        if(foundLocation != string::npos){
+
+            command = input.substr(START, foundLocation);
+            string restOfWord = input.substr(foundLocation + OFFSET, input.length());
+            nameEndLocation= restOfWord.find(DELIMITER);
 
             if(command == "change" || command == "insert"){
-                name = rest.substr(0, nameEnd);
-                score = stoi(rest.substr(nameEnd + 1, rest.length()));
+                name = restOfWord.substr(START, nameEndLocation);
+                score = stoi(restOfWord.substr(nameEndLocation + OFFSET, restOfWord.length()));
             }
             else if(command == "lookup" || command == "remove"){
-                name = rest.substr(0, nameEnd);
+                name = restOfWord.substr(START, nameEndLocation);
             }
         }
         else{
-            command = line;
+            command = input;
         }
         running = processCommand(grades, command, name, score);
     }
@@ -156,13 +159,12 @@ bool processCommand(Table * & grades, string & command, string & name, int & sco
     }
     else{
         cout << "ERROR: invalid command"<<endl;
+        displayHelp();
     }
 
     return keepRunning;
 
 }
-
-
 
 /**
  * prints out the size of the table
@@ -177,7 +179,7 @@ void displaySize(int & size){
         cout << "There is "<< size << " entry in the table."<<endl;
     }
     else{
-        cout << "There are " << size << " in the table." <<endl;
+        cout << "There are " << size << " entries in the table." <<endl;
     }
 }
 
@@ -200,9 +202,9 @@ void displayHelp(){
 
 /**
  * removes the name if present and inserts the new name and score
- * @param grades
+ * @param grades a well-formed HashTable
  * @param name a valid name with no spaces
- * @param score
+ * @param score the score to be inserted into the table associated with the name
  */
 void executeChange(Table * & grades, string & name, int & score){
     int * result = grades -> lookup(name);
@@ -217,7 +219,8 @@ void executeChange(Table * & grades, string & name, int & score){
 }
 
 /**
- * executes a lookup with a given name on the Table
+ * executes a lookup with a given name on the Table and prints the his or her score
+ * or indicates if the student is not present
  * @param grades the Table for the lookup to be performed on
  * @param name key to be looked up
  */
@@ -229,12 +232,12 @@ void executeLookup(Table * & grades, string & name){
         cout << "The result is not present"<<endl;
     }
     else{
-        cout<< name << " : " << * result <<endl;
+        cout<< "Score: "<< * result <<endl;
     }
 }
 
 /**
- * executes the remove of a key from the table
+ * executes the remove of a key from the table.  Prints whether or not it worked.
  * @param grades the table from which to remove from
  * @param name the key to be removed from the table
  */
