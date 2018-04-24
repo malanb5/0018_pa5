@@ -55,7 +55,10 @@ void buildTable(Table &concord) {
 
 int main(int argc, char * argv[]) {
 
-  bool doHashStats = false;
+  freopen("/Users/malanb5/cs455/pa5/poe.txt", "r", stdin);
+  freopen("/Users/malanb5/cs455/pa5/poeout.txt", "w", stdout);
+
+  bool doHashStats = true;
 
   // string(c_string_var) below converts the c-string to a string object
 
@@ -67,13 +70,16 @@ int main(int argc, char * argv[]) {
 
   buildTable(concord);
 
-  //  cout << "Concord in no particular order: " << endl;
+  cout << "Concord in no particular order: " << endl;
   concord.printAll();
 
   if (doHashStats) {
-    cerr << "Hash stats: " << endl;
-    concord.hashStats(cerr);
+    cout << "Hash stats: " << endl;
+    concord.hashStats(cout);
   }
+
+  fclose(stdin);
+  fclose(stdout);
 
   return 0;
 }

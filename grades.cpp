@@ -29,6 +29,12 @@ void displaySize(int &);
 
 bool processCommand(Table * &, string &, string &, int &);
 
+void executeChange(Table * &, string &, int &);
+
+void executeLookup(Table * &, string &);
+
+void executeRemove(Table * &, string &);
+
 int main(int argc, char * argv[]) {
 
   // gets the hash table size from the command line
@@ -120,33 +126,24 @@ bool processCommand(Table * & grades, string & command, string & name, int & sco
     bool keepRunning = true;
 
     if(command == "change") {
-
+        executeChange(grades, name, score);
     }
     else if(command == "insert") {
         grades -> insert(name, score);
     }
     else if(command == "lookup") {
-        int * result = grades ->lookup(name);
-
-        if(result == NULL){
-            cout << "The result is not present"<<endl;
-        }
-        else{
-            cout<< name << " : " << * result <<endl;
-        }
+        executeLookup(grades, name);
     }
     else if (command == "remove") {
-
+        executeRemove(grades, name);
     }
     else if (command == "print") {
         grades -> printAll();
     }
-
     else if( command == "size") {
         int size = grades -> numEntries();
         displaySize(size);
     }
-
     else if (command == "stats") {
         grades -> hashStats(cout);
     }
@@ -164,6 +161,8 @@ bool processCommand(Table * & grades, string & command, string & name, int & sco
     return keepRunning;
 
 }
+
+
 
 /**
  * prints out the size of the table
@@ -199,5 +198,53 @@ void displayHelp(){
     cout << "quit       Exits the program\n";
 }
 
+/**
+ * removes the name if present and inserts the new name and score
+ * @param grades
+ * @param name a valid name with no spaces
+ * @param score
+ */
+void executeChange(Table * & grades, string & name, int & score){
+    int * result = grades -> lookup(name);
 
+    if(result == NULL){
+        cout << name << " is not present. Cannot change."<<endl;
+    }
+    else{
+        grades -> remove(name);
+        grades -> insert(name, score);
+    }
+}
+
+/**
+ * executes a lookup with a given name on the Table
+ * @param grades the Table for the lookup to be performed on
+ * @param name key to be looked up
+ */
+void executeLookup(Table * & grades, string & name){
+
+    int * result = grades ->lookup(name);
+
+    if(result == NULL){
+        cout << "The result is not present"<<endl;
+    }
+    else{
+        cout<< name << " : " << * result <<endl;
+    }
+}
+
+/**
+ * executes the remove of a key from the table
+ * @param grades the table from which to remove from
+ * @param name the key to be removed from the table
+ */
+void executeRemove(Table * & grades, string & name){
+    bool result = grades -> remove(name);
+    if(result){
+        cout << name <<" successfully removed."<<endl;
+    }
+    else{
+        cout << name <<" not present. Please try again."<<endl;
+    }
+}
 

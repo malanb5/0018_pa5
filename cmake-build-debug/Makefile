@@ -111,43 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named grades.o
+# Target rules for targets named concord
 
 # Build rule for target.
-grades.o: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 grades.o
-.PHONY : grades.o
+concord: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 concord
+.PHONY : concord
 
 # fast build rule for target.
-grades.o/fast:
-	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/build
-.PHONY : grades.o/fast
-
-#=============================================================================
-# Target rules for targets named Table.o
-
-# Build rule for target.
-Table.o: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Table.o
-.PHONY : Table.o
-
-# fast build rule for target.
-Table.o/fast:
-	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/build
-.PHONY : Table.o/fast
-
-#=============================================================================
-# Target rules for targets named listFuncs.o
-
-# Build rule for target.
-listFuncs.o: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 listFuncs.o
-.PHONY : listFuncs.o
-
-# fast build rule for target.
-listFuncs.o/fast:
-	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/build
-.PHONY : listFuncs.o/fast
+concord/fast:
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/build
+.PHONY : concord/fast
 
 Table.o: Table.cpp.o
 
@@ -155,7 +129,7 @@ Table.o: Table.cpp.o
 
 # target to build an object file
 Table.cpp.o:
-	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/Table.cpp.o
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/Table.cpp.o
 .PHONY : Table.cpp.o
 
 Table.i: Table.cpp.i
@@ -164,7 +138,7 @@ Table.i: Table.cpp.i
 
 # target to preprocess a source file
 Table.cpp.i:
-	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/Table.cpp.i
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/Table.cpp.i
 .PHONY : Table.cpp.i
 
 Table.s: Table.cpp.s
@@ -173,35 +147,35 @@ Table.s: Table.cpp.s
 
 # target to generate assembly for a file
 Table.cpp.s:
-	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/Table.cpp.s
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/Table.cpp.s
 .PHONY : Table.cpp.s
 
-grades.o: grades.cpp.o
+concord.o: concord.cpp.o
 
-.PHONY : grades.o
+.PHONY : concord.o
 
 # target to build an object file
-grades.cpp.o:
-	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/grades.cpp.o
-.PHONY : grades.cpp.o
+concord.cpp.o:
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/concord.cpp.o
+.PHONY : concord.cpp.o
 
-grades.i: grades.cpp.i
+concord.i: concord.cpp.i
 
-.PHONY : grades.i
+.PHONY : concord.i
 
 # target to preprocess a source file
-grades.cpp.i:
-	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/grades.cpp.i
-.PHONY : grades.cpp.i
+concord.cpp.i:
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/concord.cpp.i
+.PHONY : concord.cpp.i
 
-grades.s: grades.cpp.s
+concord.s: concord.cpp.s
 
-.PHONY : grades.s
+.PHONY : concord.s
 
 # target to generate assembly for a file
-grades.cpp.s:
-	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/grades.cpp.s
-.PHONY : grades.cpp.s
+concord.cpp.s:
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/concord.cpp.s
+.PHONY : concord.cpp.s
 
 listFuncs.o: listFuncs.cpp.o
 
@@ -209,7 +183,7 @@ listFuncs.o: listFuncs.cpp.o
 
 # target to build an object file
 listFuncs.cpp.o:
-	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/listFuncs.cpp.o
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/listFuncs.cpp.o
 .PHONY : listFuncs.cpp.o
 
 listFuncs.i: listFuncs.cpp.i
@@ -218,7 +192,7 @@ listFuncs.i: listFuncs.cpp.i
 
 # target to preprocess a source file
 listFuncs.cpp.i:
-	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/listFuncs.cpp.i
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/listFuncs.cpp.i
 .PHONY : listFuncs.cpp.i
 
 listFuncs.s: listFuncs.cpp.s
@@ -227,7 +201,7 @@ listFuncs.s: listFuncs.cpp.s
 
 # target to generate assembly for a file
 listFuncs.cpp.s:
-	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/listFuncs.cpp.s
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/listFuncs.cpp.s
 .PHONY : listFuncs.cpp.s
 
 # Help Target
@@ -238,15 +212,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... grades.o"
-	@echo "... Table.o"
-	@echo "... listFuncs.o"
+	@echo "... concord"
 	@echo "... Table.o"
 	@echo "... Table.i"
 	@echo "... Table.s"
-	@echo "... grades.o"
-	@echo "... grades.i"
-	@echo "... grades.s"
+	@echo "... concord.o"
+	@echo "... concord.i"
+	@echo "... concord.s"
 	@echo "... listFuncs.o"
 	@echo "... listFuncs.i"
 	@echo "... listFuncs.s"

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/malanb5/cs455/pa5/Table.cpp
+Table.h
+/Users/malanb5/cs455/pa5/Table.h
+iostream
+-
+string
+-
+cassert
+-
+listFuncs.h
+/Users/malanb5/cs455/pa5/listFuncs.h
+
+/Users/malanb5/cs455/pa5/Table.h
+iostream
+-
+string
+-
+
+/Users/malanb5/cs455/pa5/listFuncs.cpp
+iostream
+-
+cassert
+-
+listFuncs.h
+/Users/malanb5/cs455/pa5/listFuncs.h
+
+/Users/malanb5/cs455/pa5/listFuncs.h
+
+/Users/malanb5/cs455/pa5/pa5list.cpp
+iostream
+-
+string
+-
+cassert
+-
+listFuncs.h
+/Users/malanb5/cs455/pa5/listFuncs.h
+

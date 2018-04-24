@@ -57,7 +57,103 @@ include CMakeFiles/grades.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/grades.dir/flags.make
 
-CMakeFiles/grades.dir/requires:
+CMakeFiles/grades.dir/grades.cpp.o: CMakeFiles/grades.dir/flags.make
+CMakeFiles/grades.dir/grades.cpp.o: ../grades.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/grades.dir/grades.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/grades.dir/grades.cpp.o -c /Users/malanb5/cs455/pa5/grades.cpp
+
+CMakeFiles/grades.dir/grades.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/grades.dir/grades.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/malanb5/cs455/pa5/grades.cpp > CMakeFiles/grades.dir/grades.cpp.i
+
+CMakeFiles/grades.dir/grades.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grades.dir/grades.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/malanb5/cs455/pa5/grades.cpp -o CMakeFiles/grades.dir/grades.cpp.s
+
+CMakeFiles/grades.dir/grades.cpp.o.requires:
+
+.PHONY : CMakeFiles/grades.dir/grades.cpp.o.requires
+
+CMakeFiles/grades.dir/grades.cpp.o.provides: CMakeFiles/grades.dir/grades.cpp.o.requires
+	$(MAKE) -f CMakeFiles/grades.dir/build.make CMakeFiles/grades.dir/grades.cpp.o.provides.build
+.PHONY : CMakeFiles/grades.dir/grades.cpp.o.provides
+
+CMakeFiles/grades.dir/grades.cpp.o.provides.build: CMakeFiles/grades.dir/grades.cpp.o
+
+
+CMakeFiles/grades.dir/listFuncs.cpp.o: CMakeFiles/grades.dir/flags.make
+CMakeFiles/grades.dir/listFuncs.cpp.o: ../listFuncs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/grades.dir/listFuncs.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/grades.dir/listFuncs.cpp.o -c /Users/malanb5/cs455/pa5/listFuncs.cpp
+
+CMakeFiles/grades.dir/listFuncs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/grades.dir/listFuncs.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/malanb5/cs455/pa5/listFuncs.cpp > CMakeFiles/grades.dir/listFuncs.cpp.i
+
+CMakeFiles/grades.dir/listFuncs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grades.dir/listFuncs.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/malanb5/cs455/pa5/listFuncs.cpp -o CMakeFiles/grades.dir/listFuncs.cpp.s
+
+CMakeFiles/grades.dir/listFuncs.cpp.o.requires:
+
+.PHONY : CMakeFiles/grades.dir/listFuncs.cpp.o.requires
+
+CMakeFiles/grades.dir/listFuncs.cpp.o.provides: CMakeFiles/grades.dir/listFuncs.cpp.o.requires
+	$(MAKE) -f CMakeFiles/grades.dir/build.make CMakeFiles/grades.dir/listFuncs.cpp.o.provides.build
+.PHONY : CMakeFiles/grades.dir/listFuncs.cpp.o.provides
+
+CMakeFiles/grades.dir/listFuncs.cpp.o.provides.build: CMakeFiles/grades.dir/listFuncs.cpp.o
+
+
+CMakeFiles/grades.dir/Table.cpp.o: CMakeFiles/grades.dir/flags.make
+CMakeFiles/grades.dir/Table.cpp.o: ../Table.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/grades.dir/Table.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/grades.dir/Table.cpp.o -c /Users/malanb5/cs455/pa5/Table.cpp
+
+CMakeFiles/grades.dir/Table.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/grades.dir/Table.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/malanb5/cs455/pa5/Table.cpp > CMakeFiles/grades.dir/Table.cpp.i
+
+CMakeFiles/grades.dir/Table.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grades.dir/Table.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/malanb5/cs455/pa5/Table.cpp -o CMakeFiles/grades.dir/Table.cpp.s
+
+CMakeFiles/grades.dir/Table.cpp.o.requires:
+
+.PHONY : CMakeFiles/grades.dir/Table.cpp.o.requires
+
+CMakeFiles/grades.dir/Table.cpp.o.provides: CMakeFiles/grades.dir/Table.cpp.o.requires
+	$(MAKE) -f CMakeFiles/grades.dir/build.make CMakeFiles/grades.dir/Table.cpp.o.provides.build
+.PHONY : CMakeFiles/grades.dir/Table.cpp.o.provides
+
+CMakeFiles/grades.dir/Table.cpp.o.provides.build: CMakeFiles/grades.dir/Table.cpp.o
+
+
+# Object files for target grades
+grades_OBJECTS = \
+"CMakeFiles/grades.dir/grades.cpp.o" \
+"CMakeFiles/grades.dir/listFuncs.cpp.o" \
+"CMakeFiles/grades.dir/Table.cpp.o"
+
+# External object files for target grades
+grades_EXTERNAL_OBJECTS =
+
+grades: CMakeFiles/grades.dir/grades.cpp.o
+grades: CMakeFiles/grades.dir/listFuncs.cpp.o
+grades: CMakeFiles/grades.dir/Table.cpp.o
+grades: CMakeFiles/grades.dir/build.make
+grades: CMakeFiles/grades.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable grades"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/grades.dir/link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+CMakeFiles/grades.dir/build: grades
+
+.PHONY : CMakeFiles/grades.dir/build
+
+CMakeFiles/grades.dir/requires: CMakeFiles/grades.dir/grades.cpp.o.requires
+CMakeFiles/grades.dir/requires: CMakeFiles/grades.dir/listFuncs.cpp.o.requires
+CMakeFiles/grades.dir/requires: CMakeFiles/grades.dir/Table.cpp.o.requires
 
 .PHONY : CMakeFiles/grades.dir/requires
 

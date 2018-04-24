@@ -60,113 +60,39 @@ CMAKE_SOURCE_DIR = /Users/malanb5/cs455/pa5
 CMAKE_BINARY_DIR = /Users/malanb5/cs455/pa5/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/grades.o.dir
+# Target rules for target CMakeFiles/concord.dir
 
 # All Build rule for target.
-CMakeFiles/grades.o.dir/all:
-	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/depend
-	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target grades.o"
-.PHONY : CMakeFiles/grades.o.dir/all
+CMakeFiles/concord.dir/all:
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/depend
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target concord"
+.PHONY : CMakeFiles/concord.dir/all
 
 # Include target in all.
-all: CMakeFiles/grades.o.dir/all
+all: CMakeFiles/concord.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/grades.o.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/grades.o.dir/all
+CMakeFiles/concord.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/concord.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/grades.o.dir/rule
+.PHONY : CMakeFiles/concord.dir/rule
 
 # Convenience name for target.
-grades.o: CMakeFiles/grades.o.dir/rule
+concord: CMakeFiles/concord.dir/rule
 
-.PHONY : grades.o
-
-# clean rule for target.
-CMakeFiles/grades.o.dir/clean:
-	$(MAKE) -f CMakeFiles/grades.o.dir/build.make CMakeFiles/grades.o.dir/clean
-.PHONY : CMakeFiles/grades.o.dir/clean
+.PHONY : concord
 
 # clean rule for target.
-clean: CMakeFiles/grades.o.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Table.o.dir
-
-# All Build rule for target.
-CMakeFiles/Table.o.dir/all:
-	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/depend
-	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Table.o"
-.PHONY : CMakeFiles/Table.o.dir/all
-
-# Include target in all.
-all: CMakeFiles/Table.o.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Table.o.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Table.o.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Table.o.dir/rule
-
-# Convenience name for target.
-Table.o: CMakeFiles/Table.o.dir/rule
-
-.PHONY : Table.o
+CMakeFiles/concord.dir/clean:
+	$(MAKE) -f CMakeFiles/concord.dir/build.make CMakeFiles/concord.dir/clean
+.PHONY : CMakeFiles/concord.dir/clean
 
 # clean rule for target.
-CMakeFiles/Table.o.dir/clean:
-	$(MAKE) -f CMakeFiles/Table.o.dir/build.make CMakeFiles/Table.o.dir/clean
-.PHONY : CMakeFiles/Table.o.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Table.o.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/listFuncs.o.dir
-
-# All Build rule for target.
-CMakeFiles/listFuncs.o.dir/all:
-	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/depend
-	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target listFuncs.o"
-.PHONY : CMakeFiles/listFuncs.o.dir/all
-
-# Include target in all.
-all: CMakeFiles/listFuncs.o.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/listFuncs.o.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/listFuncs.o.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/malanb5/cs455/pa5/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/listFuncs.o.dir/rule
-
-# Convenience name for target.
-listFuncs.o: CMakeFiles/listFuncs.o.dir/rule
-
-.PHONY : listFuncs.o
-
-# clean rule for target.
-CMakeFiles/listFuncs.o.dir/clean:
-	$(MAKE) -f CMakeFiles/listFuncs.o.dir/build.make CMakeFiles/listFuncs.o.dir/clean
-.PHONY : CMakeFiles/listFuncs.o.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/listFuncs.o.dir/clean
+clean: CMakeFiles/concord.dir/clean
 
 .PHONY : clean
 

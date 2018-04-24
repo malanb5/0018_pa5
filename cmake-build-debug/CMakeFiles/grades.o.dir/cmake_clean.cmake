@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/grades.o.dir/grades.cpp.o"
+  "CMakeFiles/grades.o.dir/listFuncs.cpp.o"
+  "CMakeFiles/grades.o.dir/Table.cpp.o"
   "grades.o.pdb"
   "grades.o"
 )

@@ -27,12 +27,6 @@ Node::Node(const string &theKey, int theValue, Node *n) {
 //*************************************************************************
 // put the function definitions for your list functions below
 
-/**
- * determine if the target key is within the linked list or not
- * @param list the linked list to be searched
- * @param target the key to be searched for
- * @return whether or not the key is in the linked list
- */
 int * listContains(ListType & list, string target){
     ListType copyOfPointer = list;
 
@@ -46,12 +40,6 @@ int * listContains(ListType & list, string target){
     return NULL;
 }
 
-
-/**
- * calculates the size of the linked list
- * @param list the linked list in question
- * @return the size of the linkedList
- */
 int listSize(ListType & list){
 
     ListType copyOfPointer = list;
@@ -66,44 +54,30 @@ int listSize(ListType & list){
   return counter;
 }
 
-/**
- * deletes the target key and return true, if not there returns false
- * and the list remains unchanged
- * PRE: a non-empty, well-formed linked list
- * @param list a valid linkedList
- * @param target key to be located in the list
- * @return true and the entry removed, false the list remains unchanged
- */
 bool listRemove(ListType & list, string target){
     ListType copyOfPointer = list;
 
-    // checks the target is the base case of a list of 1 Node
-    if(list -> next == NULL && list -> key == target){
-        list = NULL;
-        delete list;
+    if(list == NULL){
+        return false;
+    }
+    else if(list -> key == target){
+        delete copyOfPointer;
+        list = list -> next;
         return true;
     }
     else{
-        while(copyOfPointer->next != NULL && copyOfPointer -> next-> key != target){
-            copyOfPointer = copyOfPointer ->next;
-            if(copyOfPointer -> next == NULL) {
-                return false;
+        while(copyOfPointer ->next != NULL){
+            if(copyOfPointer ->next -> key == target){
+                delete copyOfPointer -> next;
+                copyOfPointer -> next = copyOfPointer -> next -> next;
+                return true;
             }
+            copyOfPointer = copyOfPointer -> next;
         }
-
-        copyOfPointer -> next = copyOfPointer ->next ->next;
-        delete copyOfPointer ->next;
-        return true;
-
+        return false;
     }
 }
 
-/**
- * adds a node to the front of the linked list
- * @param list the linked list in question
- * @param keyToAdd the key to be added
- * @param valueToAdd the value to be added
- */
 bool listAdd(ListType & list, string keyToAdd, int valueToAdd){
     ListType aNode;
 
@@ -111,7 +85,7 @@ bool listAdd(ListType & list, string keyToAdd, int valueToAdd){
         aNode = new Node(keyToAdd, valueToAdd);
     }
     else{
-        if(listContains(list, keyToAdd)){
+        if(listContains(list, keyToAdd) != NULL){
             return false;
         }
         else{
@@ -124,11 +98,6 @@ bool listAdd(ListType & list, string keyToAdd, int valueToAdd){
 
 }
 
-/**
- * prints the linked list
- * @param list the linked list to be printed
- */
-
 void listPrint(ListType & list){
 
     ListType copyOfPointer = list;
@@ -136,9 +105,8 @@ void listPrint(ListType & list){
     if(copyOfPointer != NULL) {
 
         while (copyOfPointer != NULL) {
-            cout << copyOfPointer->key << " : " << copyOfPointer->value << "  --->  ";
+            cout << copyOfPointer->key << " " << copyOfPointer->value<<endl;
             copyOfPointer = copyOfPointer->next;
         }
-        cout<<"NULL"<<endl;
     }
 }

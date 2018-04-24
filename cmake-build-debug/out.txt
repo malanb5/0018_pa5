@@ -1,0 +1,6 @@
+Concord in no particular order: 
+Hash stats: 
+number of buckets: 9973
+number of entries: 0
+number of non-empty buckets: 0
+longest chain: 0

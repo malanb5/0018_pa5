@@ -20,13 +20,12 @@
 // your Table methods, below.
 
 #include "listFuncs.h"
-
 //*************************************************************************
 
 
 Table::Table() {
     hashSize = HASH_SIZE;
-    data = new ListType[hashSize];
+    data = new ListType[hashSize]();
     numberOfEntries = 0;
 
 }
@@ -37,36 +36,28 @@ Table::Table(unsigned int hSize) {
     numberOfEntries = 0;
 }
 
-/**
- * checks if the key is present in the table
- * @param key the target to be looked up in the table
- * @return whether or not the key is present
- * NULL if not present, the value if present
- */
 int * Table::lookup(const string &key) {
-    int hash = hashCode(key);
-    int hashAddress = hash % hashSize;
+    int hashAddress = getHashAddress(key);
 
     ListType location = data[hashAddress];
 
     return listContains(location, key);
 }
 
-
-
 bool Table::remove(const string &key) {
-    return false;  // dummy return value for stub
+    if(lookup(key) == NULL){
+        return false;
+    }
+    else{
+        int hashAddress = getHashAddress(key);
+        listRemove(data[hashAddress], key);
+        --numberOfEntries;
+        return true;
+    }
 }
 
-/**
- * inserts a Node into the hashTable if possible
- * @param key the key to be inserted into the hashTable
- * @param value the value assocaited with the key
- * @return
- */
 bool Table::insert(const string &key, int value) {
-    int hash = hashCode(key);
-    int hashAddress = hash % hashSize;
+    int hashAddress = getHashAddress(key);
 
     if(listAdd(data[hashAddress], key, value)){
         ++numberOfEntries;
@@ -81,19 +72,19 @@ int Table::numEntries() const {
     return numberOfEntries;
 }
 
-/**
- * prints out the contents of the hashtable
- */
 void Table::printAll() const {
 
-    for(int address = 0; address < hashSize; ++address){
-        listPrint(data[address]);
+    if(numberOfEntries == 0){
+        cout << "The table is empty."<<endl;
+    }
+    else{
+        for(int address = 0; address < hashSize; ++address){
+            listPrint(data[address]);
+        }
     }
 
 }
 
-
-// add definitions for your private methods here
 int Table::countNonEmptyBuckets() const{
       int counter = 0;
 
@@ -115,7 +106,7 @@ int Table::findLongestChain() const{
             if(counter >max){
                 max = counter;
             }
-            }
+          }
       }
 
     return max;
@@ -126,6 +117,12 @@ void Table::hashStats(ostream &out) const {
       out << "number of entries: " << numEntries() <<"\n";
       out << "number of non-empty buckets: " << countNonEmptyBuckets()<<"\n";
       out << "longest chain: " << findLongestChain()<<endl;
+
+}
+
+int Table::getHashAddress(const string & key) const{
+    int hash = hashCode(key);
+    return hash % hashSize;
 
 }
 

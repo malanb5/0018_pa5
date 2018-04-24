@@ -111,9 +111,25 @@ private:
 
   int numberOfEntries;
 
+    /**
+   * counts the number of addresses with key value pairs
+   * @return the number of adddresses with key value pairs
+   */
   int countNonEmptyBuckets() const;
 
+    /**
+   * finds the longest linked list in the table
+   * @return the number of links in the longest linked list of the table
+   */
   int findLongestChain() const;
+
+    /**
+   * returns the given hash addresss from a valid key
+   * PRE: a valid key
+   * @param key to be hashed
+   * @return the hash address of the key
+   */
+  int getHashAddress(const string &) const;
 
 };
 
